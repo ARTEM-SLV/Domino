@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Domino</string>
+    <string name="start_game">Начать игру</string>
+    <string name="refresh">Обновить</string>
+    <string name="stats">Статистика</string>
+    <string name="rules"><u>Правила</u></string>
+    <string name="rate"><u>Оценить</u></string>
+    <string name="exit">Выход</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Закрыть</string>
+
+    <string name="congratulations">Поздравляю</string>
+    <string name="you_win">Победа</string>
+    <string name="got_general">Ваш ранг Генерал</string>
+    <string name="got_colonel">Ваш ранг Полковник</string>
+    <string name="got_major">Ваш ранг Майор</string>
+
+    <string name="message_exit_app">Для выхода нажмите ещё раз!</string>
+
+    <string name="general">Генерал</string>
+    <string name="colonel">Полковник</string>
+    <string name="major">Майор</string>
+    <string name="total_wins">Всего побед</string>
+
+    <!--  +about game-->
+    <string name="text_about_1" >На доске 28 костей домино. У каждой костяшки домино есть пара. Эти пары в сумме дают 12.</string>
+    <string name="text_about_2" >Вы должны выбрать 2 кости домино. Если выбранные костяшки в сумме составляют 12, то эти костяшки убираются с поля.</string>
+    <string name="text_about_3" >Затем открываются закрытые домино, только если нет костей сверху или снизу. Вы должны убрать все кости домино, удачи!</string>
+    <!--  -about game-->
+
+    <string name="area_pyramid">пирамида</string>
+    <string name="area_cross">крест</string>
+    <string name="area_fountain">колодец</string>
+    <string name="area_snowflake">снежинка</string>
+
+    <string name="text_no_more_variants">Вариантов больше нет!</string>
+</resources>

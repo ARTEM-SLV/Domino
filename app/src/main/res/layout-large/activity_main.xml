@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/mainLineTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <LinearLayout
+                android:id="@+id/mainLineTop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAbout"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="@string/app_name"
+                    android:background="@color/transparent"
+                    android:onClick="onClickAbout"
+                    android:paddingTop="10dp"
+                    app:icon="@android:drawable/ic_dialog_info"
+                    app:iconGravity="top"
+                    app:iconSize="50dp"
+                    app:iconTint="@color/teal_700" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainLineTop1"
+                android:layout_width="420dp"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAreaRefresh"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="onClickStartGame"
+                    android:text="@string/start_game"
+                    android:textSize="46sp"
+                    android:typeface="monospace" />
+
+                <Button
+                    android:id="@+id/btnRecords"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="onClickRecords"
+                    android:text="@string/stats"
+                    android:textSize="40sp"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainLineMid"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/style_corners_white_large"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/btnLeft"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:layout_weight="0.2"
+                android:background="@drawable/btn_style_non"
+                android:onClick="onLeftClick"
+                app:icon="@drawable/ic_left_24"
+                app:iconGravity="textStart"
+                app:iconSize="50dp" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:contentDescription="@string/app_name" />
+
+            <Button
+                android:id="@+id/btnRight"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:layout_weight="0.2"
+                android:background="@drawable/btn_style_non"
+                android:onClick="onRightClick"
+                app:icon="@drawable/ic_right_24"
+                app:iconGravity="textEnd"
+                app:iconSize="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainLineBot"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/btnRate"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ocRateClick"
+                android:text="@string/rate"
+                android:textColor="@color/dark"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnExit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exit"
+                android:onClick="onExitClick"
+                android:textColor="@color/dark"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

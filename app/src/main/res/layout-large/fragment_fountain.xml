@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fountainMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fountainLainLayout"
+        android:layout_width="560dp"
+        android:layout_height="560dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/f_line1"
+            android:layout_width="70dp"
+            android:layout_height="420dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/f11"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/f12"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f12"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/f11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/f13"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f13"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/f12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/f_line2"
+            android:layout_width="420dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/f21"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/f22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f22"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f23"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/f22"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/f_line3"
+            android:layout_width="70dp"
+            android:layout_height="420dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/f31"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/f32"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f32"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f33"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/f_line4"
+            android:layout_width="420dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/f41"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/f42"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f42"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/f41"
+                app:layout_constraintStart_toEndOf="@+id/f43"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f43"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/f42"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/f_line5"
+            android:layout_width="70dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginBottom="105dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/f52"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f51"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/f52"
+                app:srcCompat="@drawable/casing_dragon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/f_line6"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="105dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/f62"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/f61"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f61"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/f62"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/f_line7"
+            android:layout_width="70dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="105dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/f72"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/f71"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f71"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/f72"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/f_line8"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="105dp"
+            android:layout_marginBottom="105dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/f82"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/f81"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f81"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/f82"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/f_line9"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginEnd="175dp"
+            android:layout_marginBottom="175dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/f94"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f93"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f92"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:rotation="90"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+
+            <ImageView
+                android:id="@+id/f91"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/casing_dragon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/f04"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/app_name"
+            android:padding="1dp"
+            android:rotation="45"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/casing_dragon" />
+
+        <ImageView
+            android:id="@+id/f03"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/app_name"
+            android:padding="1dp"
+            android:rotation="135"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/casing_dragon" />
+
+        <ImageView
+            android:id="@+id/f02"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/app_name"
+            android:padding="1dp"
+            android:rotation="45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/casing_dragon" />
+
+        <ImageView
+            android:id="@+id/f01"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/app_name"
+            android:padding="1dp"
+            android:rotation="135"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/casing_dragon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

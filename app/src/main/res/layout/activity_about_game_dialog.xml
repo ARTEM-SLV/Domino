@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aboutMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:padding="5dp"
+    tools:context=".AboutGame">
+
+    <LinearLayout
+        android:id="@+id/aboutCommandPanel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="onAboutCloseClick"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aboutMainLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/aboutLineTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgAboutGame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:srcCompat="@drawable/pyramid_200_333" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutLineMid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtAboutGame"
+                style="@android:style/Widget.DeviceDefault.Light.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="34sp"
+                android:textStyle="italic"
+                tools:text="@string/text_about_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutLineBot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnAboutBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:onClick="onAboutBackClick"
+                app:srcCompat="@drawable/ic_back_space_24"
+                app:tint="@color/white"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/btnAboutPage1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_filled_circle_24"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btnAboutPage2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_circle_24"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btnAboutPage3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_circle_24"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btnAboutForward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:onClick="onAboutForwardClick"
+                app:srcCompat="@drawable/ic_forward_space_24"
+                app:tint="@color/white"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

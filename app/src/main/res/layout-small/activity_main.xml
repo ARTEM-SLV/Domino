@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/mainLineTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/mainLineTop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAbout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="onClickAbout"
+                    app:icon="@android:drawable/ic_dialog_info"
+                    app:iconGravity="top"
+                    app:iconSize="20dp"
+                    app:iconTint="@color/teal_700" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainLineTop1"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAreaRefresh"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green"
+                    android:onClick="onClickStartGame"
+                    android:text="@string/start_game"
+                    android:textSize="16sp"
+                    android:typeface="monospace" />
+
+                <Button
+                    android:id="@+id/btnRecords"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:onClick="onClickRecords"
+                    android:text="@string/stats"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainLineMid"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/style_corners_white_small"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/btnMainAreaLeft"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_weight="0.6"-->
+            <!--                android:onClick="onAreaLeftClick"-->
+            <!--                app:srcCompat="@drawable/ic_left_24" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/imgArea"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_weight="0.2"-->
+            <!--                android:background="@drawable/pyramid_clean_200_350" />-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/btnMainAreaRight"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_weight="0.6"-->
+            <!--                android:onClick="onAreaRightClick"-->
+            <!--                app:srcCompat="@drawable/ic_right_24" />-->
+
+            <Button
+                android:id="@+id/btnLeft"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style_non"
+                android:minWidth="48dp"
+                android:onClick="onLeftClick"
+                app:icon="@drawable/ic_left_24"
+                app:iconGravity="textEnd" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnRight"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style_non"
+                android:minWidth="48dp"
+                android:onClick="onRightClick"
+                app:icon="@drawable/ic_right_24"
+                app:iconGravity="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainLineBot"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnRate"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/transparent"
+                android:onClick="ocRateClick"
+                android:text="@string/rate"
+                android:textColor="@color/dark"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnExit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:onClick="onExitClick"
+                android:text="@string/exit"
+                android:textColor="@color/dark"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

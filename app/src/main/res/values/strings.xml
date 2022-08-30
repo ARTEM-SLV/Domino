@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Domino</string>
+    <string name="start_game">Start game</string>
+    <string name="refresh">Refresh</string>
+    <string name="stats">Stats</string>
+    <string name="rules"><u>Rules</u></string>
+    <string name="rate"><u>Rate</u></string>
+    <string name="exit">Exit</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="congratulations">Congratulations</string>
+    <string name="you_win">Victory</string>
+    <string name="got_general">Your rank a General</string>
+    <string name="got_colonel">Your rank a Colonel</string>
+    <string name="got_major">Your rank a Major</string>
+
+    <string name="message_exit_app">Click again to exit!</string>
+
+    <string name="general">General</string>
+    <string name="colonel">Colonel</string>
+    <string name="major">Major</string>
+    <string name="total_wins">Total wins</string>
+
+    <!--  +about game-->
+    <string name="text_about_1" >There are 28 dominoes on the board. Every domino has a pair. These pairs add up to 12.</string>
+    <string name="text_about_2" >You must select 2 dominoes. If the selected tiles add up to 12, then these tiles are removed from the field.</string>
+    <string name="text_about_3" >Then closed dominoes are opened only if there are no dominoes above or below. You must remove all the dominoes, good luck!</string>
+    <!--  -about game-->
+
+    <string name="area_pyramid">pyramid</string>
+    <string name="area_cross">cross</string>
+    <string name="area_fountain">fountain</string>
+    <string name="area_snowflake">snowflake</string>
+
+    <string name="text_no_more_variants">No more variants!</string>
+</resources>

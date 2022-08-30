@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.162" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/ic_left_24_50.xml" value="0.1985" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn.xml" value="0.1535" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_gold.xml" value="0.1735" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_large.xml" value="0.1615" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_large_gold.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_large_teal_700.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_large_white.xml" value="0.1725" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_non.xml" value="0.1985" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_press.xml" value="0.279" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_press_large.xml" value="0.1615" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_press_large_teal_700.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_press_large_white.xml" value="0.1725" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_press_non.xml" value="0.1985" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_press_small.xml" value="0.2465" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_press_small_teal_700.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_press_small_white.xml" value="0.1725" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_press_teal_700.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_press_white.xml" value="0.1725" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_small.xml" value="0.2465" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_small_teal_700.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_small_white.xml" value="0.1725" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_teal_700.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_btn_white.xml" value="0.1725" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_corners_white.xml" value="0.1725" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_corners_white_large.xml" value="0.1725" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable-v24/style_corners_white_small.xml" value="0.1725" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/btn_style_non.xml" value="0.1575" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/btn_style_teal_700.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/btn_style_teal_700_large.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/btn_style_teal_700_small.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/btn_style_white.xml" value="0.2145" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/btn_style_white_large.xml" value="0.1615" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/btn_style_white_non.xml" value="0.1985" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/btn_style_white_small.xml" value="0.2465" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/btn_style_yellow.xml" value="0.279" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/dialog_bg.xml" value="0.1985" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/dialog_bg_gold.xml" value="0.1575" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/dialog_bg_tea_700.xml" value="0.1575" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/dialog_bg_teal_700.xml" value="0.1575" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/domino_turn.xml" value="0.169" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_back_space_24.xml" value="0.1575" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_backspace_24.xml" value="0.3415" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.205" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_check_24.xml" value="0.172" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_circle_24.xml" value="0.172" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_filled_circle_24.xml" value="0.172" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_forward_space_24.xml" value="0.1575" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_info_24.xml" value="0.1985" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2145" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_left_24.xml" value="0.1675" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_play_circle_24.xml" value="0.242" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/ic_right_24.xml" value="0.1675" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/style_bottom_line.xml" value="0.1735" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/style_bottom_line_small.xml" value="0.242" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/style_btn.xml" value="0.279" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/turn.xml" value="0.169" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/drawable/turned.xml" value="0.169" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/activity_about_game.xml" value="0.18333333333333332" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/activity_about_game_dialog.xml" value="0.18" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/activity_about_game_large.xml" value="0.12" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/activity_end_game_dialog.xml" value="0.14" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/activity_main_area.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/activity_pyramid.xml" value="0.15" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/activity_stats.xml" value="0.19" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/activity_stats_dialog.xml" value="0.25" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/fragment_cross.xml" value="0.22109375" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/fragment_fountain.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-large/fragment_pyramid.xml" value="0.21" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/activity_about_game.xml" value="0.275" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/activity_about_game_dialog.xml" value="0.30085470085470084" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/activity_about_game_normal.xml" value="0.33" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/activity_end_game_dialog.xml" value="0.30085470085470084" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/activity_main.xml" value="0.33" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/activity_main_area.xml" value="0.33" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/activity_pyramid.xml" value="0.33" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/activity_stats.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/activity_stats_dialog.xml" value="0.33" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/fragment_cross.xml" value="0.33" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/fragment_fountain.xml" value="0.30085470085470084" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-normal/fragment_pyramid.xml" value="0.33" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/activity_about_game.xml" value="2.2" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/activity_about_game_dialog.xml" value="1.1" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/activity_about_game_small.xml" value="2.2" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/activity_end_game_dialog.xml" value="1.1017214397496087" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/activity_main.xml" value="1.1" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/activity_main_area.xml" value="1.25" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/activity_pyramid.xml" value="0.9" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/activity_stats.xml" value="1.25" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/activity_stats_dialog.xml" value="1.5" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/fragment_cross.xml" value="2.0" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/fragment_fountain.xml" value="2.0" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-small/fragment_pyramid.xml" value="1.550660792951542" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout-v31/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/activity_about_game.xml" value="0.25" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/activity_about_game_dialog.xml" value="0.2" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/activity_end_game_dialog.xml" value="0.2" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/activity_lvl_pyramid.xml" value="0.3009833262077811" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/activity_main_area.xml" value="0.25" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/activity_pyramid.xml" value="0.25" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/activity_stats.xml" value="0.16" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/activity_stats_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/arena_selection_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/dialob_window.xml" value="0.15" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/dialog_window.xml" value="0.33" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/for_tests.xml" value="0.30085470085470084" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/fragment_cross.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/fragment_first.xml" value="0.18802083333333333" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/fragment_fountain.xml" value="0.33" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/fragment_pyramid.xml" value="0.30085470085470084" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/fragment_snowflake.xml" value="0.30085470085470084" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/lvl_pyramid.xml" value="0.365625" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/test_activity.xml" value="0.33" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/toolbar.xml" value="0.18333333333333332" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/layout/vinner_dialog.xml" value="0.30012825994014536" />
+        <entry key="..\:/Android Studio/Domino/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.256" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
