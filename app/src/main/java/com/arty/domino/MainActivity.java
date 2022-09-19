@@ -44,11 +44,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setArrImgAreas(){
-        int[] arrImgAreas = new int[3];
+        int[] arrImgAreas = new int[4];
 
         arrImgAreas[0] = R.drawable.pyramid_clean_200_350;
         arrImgAreas[1] = R.drawable.cross_clean_300_330;
         arrImgAreas[2] = R.drawable.fountain_clean;
+        arrImgAreas[3] = R.drawable.spruce_clean_300_380;
 
         adapter = new SlideAdapter(this, arrImgAreas);
         viewPager = findViewById(R.id.viewPager_id);
@@ -110,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 btnLeftRight.setVisibility(View.INVISIBLE);
 
                 break;
-            case 2:
+            case 3:
                 btnLeftRight = findViewById(R.id.btnLeft);
                 btnLeftRight.setVisibility(View.VISIBLE);
 
@@ -140,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                 tagArea = Constants.TAG_FOUNTAIN;
                 break;
             case 3:
-                tagArea = Constants.TAG_SNOWFLAKE;
+                tagArea = Constants.TAG_SPRUCE;
                 break;
         }
     }

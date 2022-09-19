@@ -35,7 +35,7 @@ public class AreaActivity extends AppCompatActivity {
         setFullScreen();
         setContentView(R.layout.activity_main_area);
 
-        setmAdView();
+//        setmAdView();
 
         fragmentManager = getSupportFragmentManager();
         tagArea = getIntent().getStringExtra("TAG");
@@ -64,9 +64,12 @@ public class AreaActivity extends AppCompatActivity {
                         .commit();
 
                 break;
-            case Constants.TAG_SNOWFLAKE:
-//                classFragment = PyramidFragment.class;
-//                break;
+            case Constants.TAG_SPRUCE:
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, FragmentSpruce.class, null, tagArea)
+                        .setReorderingAllowed(true)
+                        .addToBackStack(null)
+                        .commit();
         }
     }
 
@@ -104,11 +107,14 @@ public class AreaActivity extends AppCompatActivity {
                 });
 
                 break;
-            case Constants.TAG_SNOWFLAKE:
-//                SnowflakeFragment snowflakeFragment = (SnowflakeFragment) fragmentManager.findFragmentByTag(SnowflakeFragment.TAG);
-//                btnRefresh.setOnClickListener(v -> snowflakeFragment.restartGame());
+            case Constants.TAG_SPRUCE:
+                FragmentSpruce spruceFragment = (FragmentSpruce) fragmentManager.findFragmentByTag(FragmentSpruce.TAG);
+                btnRefresh.setOnClickListener(v -> {
+                    assert spruceFragment != null;
+                    spruceFragment.restartGame();
+                });
 
-//                break;
+                break;
         }
     }
 

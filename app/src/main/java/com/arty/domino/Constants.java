@@ -9,5 +9,6 @@ public class Constants {
     public final static String TAG_PYRAMID = "AreaPyramid";
     public final static String TAG_CROSS = "AreaCross";
     public final static String TAG_FOUNTAIN = "AreaFountain";
-    public final static String TAG_SNOWFLAKE= "AreaSnowflake";
+    public final static String TAG_SPRUCE= "AreaSpruce";
+//    public final static String TAG_SNOWFLAKE= "AreaSnowflake";
 }

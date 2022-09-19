@@ -71,8 +71,6 @@ public class DominoesManager {
     }
 
     public void initDominoes(){
-        Constants constants = new Constants();
-
         int[] arrValue = new int[28];
         int[] arrDominoImage = new int[28];
 
@@ -86,14 +84,13 @@ public class DominoesManager {
         while (i<28){
             int randomNum = random.nextInt(13);
 
-            if ((countRestarts%10 == 0 & countRestarts != 0) || total_wins < 3){
-                if(tagArea != Constants.TAG_FOUNTAIN)
-                if(i < 8 || i > 19){
-                    if(randomNum <= 3 || randomNum >= 9){
-                        randomNum = random.nextInt(4)+4;
-                    }
-                } else if(randomNum > 3 & randomNum < 9){
-                    continue;
+            if ((countRestarts != 0 && countRestarts%10 == 0 ) || total_wins < 3){
+                if(tagArea != Constants.TAG_FOUNTAIN) {
+                    if (i < 8 || i > 19) {
+                        if (randomNum <= 3 || randomNum >= 9) {
+                            randomNum = random.nextInt(4) + 4;
+                        }
+                    } else if (randomNum > 3 && randomNum < 9) continue;
                 }
             }
 
