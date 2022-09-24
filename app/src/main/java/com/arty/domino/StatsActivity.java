@@ -29,17 +29,17 @@ public class StatsActivity extends Activity {
 
         String tagArea = getIntent().getStringExtra("TAG");
         switch(tagArea){
-            case "AreaPyramid":
+            case Constants.TAG_PYRAMID:
                 resAreaName = R.string.area_pyramid;
                 break;
-            case "AreaCross":
+            case Constants.TAG_CROSS:
                 resAreaName = R.string.area_cross;
                 break;
-            case "AreaFountain":
+            case Constants.TAG_FOUNTAIN:
                 resAreaName = R.string.area_fountain;
                 break;
-            case "AreaSnowflake":
-                resAreaName = R.string.area_snowflake;
+            case Constants.TAG_SPRUCE:
+                resAreaName = R.string.area_spruce;
                 break;
             default:
                 resAreaName = R.string.area_pyramid;

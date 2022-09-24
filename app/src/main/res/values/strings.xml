@@ -31,7 +31,8 @@
     <string name="area_pyramid">pyramid</string>
     <string name="area_cross">cross</string>
     <string name="area_fountain">fountain</string>
-    <string name="area_snowflake">snowflake</string>
+    <string name="area_spruce">spruce</string>
+<!--    <string name="area_snowflake">snowflake</string>-->
 
     <string name="text_no_more_variants">No more variants!</string>
 </resources>

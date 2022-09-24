@@ -31,7 +31,8 @@
     <string name="area_pyramid">пирамида</string>
     <string name="area_cross">крест</string>
     <string name="area_fountain">колодец</string>
-    <string name="area_snowflake">снежинка</string>
+    <string name="area_spruce">елка</string>
+<!--    <string name="area_snowflake">снежинка</string>-->
 
     <string name="text_no_more_variants">Вариантов больше нет!</string>
 </resources>

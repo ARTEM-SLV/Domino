@@ -214,6 +214,7 @@ public class FragmentSpruce extends Fragment {
             for (int num = 1; num < line + 1; num++) {
                 dominoesManager.dominoes[i].setLine(line);
                 dominoesManager.dominoes[i].setNum(num);
+                if (line != 1) dominoesManager.dominoes[i].setRecumbent(true);
 
                 nameView = "s" + line + num;
                 try {
@@ -230,6 +231,7 @@ public class FragmentSpruce extends Fragment {
             for (int num = 1; num < line - 1; num++) {
                 dominoesManager.dominoes[i].setLine(line);
                 dominoesManager.dominoes[i].setNum(num);
+                dominoesManager.dominoes[i].setRecumbent(true);
 
                 nameView = "s" + line + num;
                 try {
@@ -246,6 +248,7 @@ public class FragmentSpruce extends Fragment {
             for (int num = 1; num < line - 5; num++) {
                 dominoesManager.dominoes[i].setLine(line);
                 dominoesManager.dominoes[i].setNum(num);
+                dominoesManager.dominoes[i].setRecumbent(true);
 
                 nameView = "s" + line + num;
                 try {
@@ -277,33 +280,44 @@ public class FragmentSpruce extends Fragment {
     }
 
     private void setOpenDominoes(){
-//        Domino d;
-//
-//        for (int i = 0; i < dominoesManager.dominoes.length; i++) {
-//            d = dominoesManager.dominoes[i];
-//            imageViewDomino = viewFragment.findViewById(d.getIdView());
-//
-//            if(d.getLine() == 1 || d.getLine() == 7){
-//                d.setOpen(true);
-//            }else if(topDominoesIsRemoved(d.getLine(), d.getNum()) || bottomDominoesIsRemoved(d.getLine(), d.getNum())){
-//                d.setOpen(true);
-//            }
-//        }
+        Domino d;
+
+        for (int i = 0; i < dominoesManager.dominoes.length; i++) {
+            d = dominoesManager.dominoes[i];
+            imageViewDomino = viewFragment.findViewById(d.getIdView());
+
+            if(d.getLine() == 1 || d.getLine() == 11){
+                d.setOpen(true);
+            }else if(topDominoesIsRemoved(d.getLine(), d.getNum()) || bottomDominoesIsRemoved(d.getLine(), d.getNum())){
+                d.setOpen(true);
+            }
+        }
     }
 
     private boolean topDominoesIsRemoved(int line, int num){
-        Domino d;
+        Domino d, d1, d2;
         boolean isRemoved = true;
         int topLine = line-1;
 
         for (int i = 0; i < 2; i++) {
-            int topNum = num+i-1;
-            if(topNum == 0 || topNum == line){
-                continue;
+            if (line == 3){
+                d1 = dominoesManager.findDomino(2, 1);
+                d2 = dominoesManager.findDomino(2, 2);
+                isRemoved = d1.isRemoved() & d2.isRemoved();
+            } else if(line == 7){
+                d1 = dominoesManager.findDomino(6, 2);
+                d2 = dominoesManager.findDomino(6, 3);
+                isRemoved = d1.isRemoved() & d2.isRemoved();
             }
-            d = dominoesManager.findDomino(topLine, topNum);
-            if(d != null) {
-                isRemoved = isRemoved & d.isRemoved();
+            else {
+                int topNum = num + i - 1;
+                if (topNum == 0 || topNum == line) {
+                    continue;
+                }
+                d = dominoesManager.findDomino(topLine, topNum);
+                if (d != null) {
+                    isRemoved = isRemoved & d.isRemoved();
+                }
             }
         }
 
@@ -314,10 +328,24 @@ public class FragmentSpruce extends Fragment {
         Domino d;
         boolean isRemoved = true;
 
-        for (int i = 0; i < 2; i++) {
-            d = dominoesManager.findDomino(line+1, num+i);
-            if(d != null) {
-                isRemoved = isRemoved & d.isRemoved();
+        if (line == 2){
+            d = dominoesManager.findDomino(3, 1);
+            isRemoved = d.isRemoved();
+        }
+        else if(line == 6){
+            if(num == 1 || num == 4) {
+                isRemoved = true;
+            } else {
+                d = dominoesManager.findDomino(7, 1);
+                isRemoved = d.isRemoved();
+            }
+        }
+        else {
+            for (int i = 0; i < 2; i++) {
+                d = dominoesManager.findDomino(line + 1, num + i);
+                if (d != null) {
+                    isRemoved = isRemoved & d.isRemoved();
+                }
             }
         }
 
