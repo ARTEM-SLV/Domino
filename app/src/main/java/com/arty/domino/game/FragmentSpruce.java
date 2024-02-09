@@ -286,7 +286,8 @@ public class FragmentSpruce extends Fragment {
             d = dominoesManager.dominoes[i];
             imageViewDomino = viewFragment.findViewById(d.getIdView());
 
-            if(d.getLine() == 1 || d.getLine() == 11){
+            if(d.getLine() == 1 || d.getLine() == 11
+                    || d.getLine() == 6 || d.getLine() == 7){
                 d.setOpen(true);
             }else if(topDominoesIsRemoved(d.getLine(), d.getNum()) || bottomDominoesIsRemoved(d.getLine(), d.getNum())){
                 d.setOpen(true);

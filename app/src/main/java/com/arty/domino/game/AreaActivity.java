@@ -6,22 +6,15 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
 import com.arty.domino.Constants;
 import com.arty.domino.R;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.MobileAds;
 
 public class AreaActivity extends AppCompatActivity {
-    private AdView mAdView;
+//    private AdView mAdView;
 
     private FragmentManager fragmentManager;
     private String tagArea = "";
@@ -130,48 +123,48 @@ public class AreaActivity extends AppCompatActivity {
     }
 
     private void setmAdView() {
-        mAdView = new AdView(this);
-        mAdView.setAdSize(AdSize.BANNER);
-        mAdView.setAdUnitId("ca-app-pub-5025438987556699/3565623496");
-
-        MobileAds.initialize(this, initializationStatus -> mAdView.setAdListener(new AdListener() {
-            @Override
-            public void onAdClicked() {
-                // Code to be executed when the user clicks on an ad.
-            }
-
-            @Override
-            public void onAdClosed() {
-                // Code to be executed when the user is about to return
-                // to the app after tapping on an ad.
-            }
-
-            @Override
-            public void onAdFailedToLoad(@NonNull LoadAdError adError) {
-                // Code to be executed when an ad request fails.
-            }
-
-            @Override
-            public void onAdImpression() {
-                // Code to be executed when an impression is recorded
-                // for an ad.
-            }
-
-            @Override
-            public void onAdLoaded() {
-                // Code to be executed when an ad finishes loading.
-            }
-
-            @Override
-            public void onAdOpened() {
-                // Code to be executed when an ad opens an overlay that
-                // covers the screen.
-            }
-        }));
-
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        mAdView = new AdView(this);
+//        mAdView.setAdSize(AdSize.BANNER);
+//        mAdView.setAdUnitId("ca-app-pub-5025438987556699/3565623496");
+//
+//        MobileAds.initialize(this, initializationStatus -> mAdView.setAdListener(new AdListener() {
+//            @Override
+//            public void onAdClicked() {
+//                // Code to be executed when the user clicks on an ad.
+//            }
+//
+//            @Override
+//            public void onAdClosed() {
+//                // Code to be executed when the user is about to return
+//                // to the app after tapping on an ad.
+//            }
+//
+//            @Override
+//            public void onAdFailedToLoad(@NonNull LoadAdError adError) {
+//                // Code to be executed when an ad request fails.
+//            }
+//
+//            @Override
+//            public void onAdImpression() {
+//                // Code to be executed when an impression is recorded
+//                // for an ad.
+//            }
+//
+//            @Override
+//            public void onAdLoaded() {
+//                // Code to be executed when an ad finishes loading.
+//            }
+//
+//            @Override
+//            public void onAdOpened() {
+//                // Code to be executed when an ad opens an overlay that
+//                // covers the screen.
+//            }
+//        }));
+//
+//        mAdView = findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
     }
 
     @Override

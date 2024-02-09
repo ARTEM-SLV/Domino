@@ -227,10 +227,19 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/s_line71"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/s_line6"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/s_line7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/s_line6"
+            android:layout_below="@+id/s_line71"
             android:gravity="center"
             android:orientation="horizontal">
 
