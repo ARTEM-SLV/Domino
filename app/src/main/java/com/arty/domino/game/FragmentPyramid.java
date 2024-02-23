@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -198,7 +197,7 @@ public class FragmentPyramid extends Fragment {
         for (Domino d: dominoesManager.dominoes) {
             imageViewDomino = viewFragment.findViewById(d.getIdView());
             imageViewDomino.setVisibility(View.VISIBLE);
-            imageViewDomino.setImageResource(R.drawable.casing_dragon);
+            imageViewDomino.setImageResource(R.drawable.shirt_empty);
             imageViewDomino.clearColorFilter();
             imageViewDomino.setOnClickListener(v -> {
                 stopAnimationLines();

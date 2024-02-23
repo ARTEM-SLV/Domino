@@ -192,43 +192,29 @@ public class FragmentSpruce extends Fragment {
         animTranslateUpToDown = AnimationUtils.loadAnimation(context.getApplicationContext(), animTranslate);
         animTranslateUpToDown.setDuration(animTranslateUpToDown.getDuration()-900);
 
-        pyramidLine = viewFragment.findViewById(R.id.s_line10);
-        pyramidLine.clearAnimation();
-        pyramidLine.setAnimation(animTranslateUpToDown);
-
-        // animation Line 11
-        animTranslateUpToDown = AnimationUtils.loadAnimation(context.getApplicationContext(), animTranslate);
-        animTranslateUpToDown.setDuration(animTranslateUpToDown.getDuration()-1000);
-
-        pyramidLine = viewFragment.findViewById(R.id.s_line11);
-        pyramidLine.clearAnimation();
-        pyramidLine.setAnimation(animTranslateUpToDown);
+//        pyramidLine = viewFragment.findViewById(R.id.s_line10);
+//        pyramidLine.clearAnimation();
+//        pyramidLine.setAnimation(animTranslateUpToDown);
+//
+//        // animation Line 11
+//        animTranslateUpToDown = AnimationUtils.loadAnimation(context.getApplicationContext(), animTranslate);
+//        animTranslateUpToDown.setDuration(animTranslateUpToDown.getDuration()-1000);
+//
+//        pyramidLine = viewFragment.findViewById(R.id.s_line11);
+//        pyramidLine.clearAnimation();
+//        pyramidLine.setAnimation(animTranslateUpToDown);
     }
 
     private void initArea(){
         String nameView;
         int line;
+        int numLimit;
 
         int i = 0;
-        for (line = 1; line < 3; line++) {
-            for (int num = 1; num < line + 1; num++) {
-                dominoesManager.dominoes[i].setLine(line);
-                dominoesManager.dominoes[i].setNum(num);
-                if (line != 1) dominoesManager.dominoes[i].setRecumbent(true);
-
-                nameView = "s" + line + num;
-                try {
-                    dominoesManager.dominoes[i].setIdView(this.getResources().getIdentifier(nameView, "id", context.getPackageName()));
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    Log.e(TAG, "set ID view: ", e);
-                }
-
-                i++;
-            }
-        }
-        for (; line < 7; line++) {
-            for (int num = 1; num < line - 1; num++) {
+        int liner = 5;
+        for (line = 1; line < 5; line++) {
+            numLimit = line + liner;
+            for (int num = 1; num < numLimit; num++) {
                 dominoesManager.dominoes[i].setLine(line);
                 dominoesManager.dominoes[i].setNum(num);
                 dominoesManager.dominoes[i].setRecumbent(true);
@@ -243,9 +229,33 @@ public class FragmentSpruce extends Fragment {
 
                 i++;
             }
+            liner -= 2;
         }
-        for (; line < 12; line++) {
-            for (int num = 1; num < line - 5; num++) {
+
+//        for (; line < 7; line++) {
+//            for (int num = 1; num < line - 1; num++) {
+//                dominoesManager.dominoes[i].setLine(line);
+//                dominoesManager.dominoes[i].setNum(num);
+//                dominoesManager.dominoes[i].setRecumbent(true);
+//
+//                nameView = "s" + line + num;
+//                try {
+//                    dominoesManager.dominoes[i].setIdView(this.getResources().getIdentifier(nameView, "id", context.getPackageName()));
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                    Log.e(TAG, "set ID view: ", e);
+//                }
+//
+//                i++;
+//            }
+//        }
+
+        for (line = 5; line < 10; line++) {
+            for (int num = 1; num < line - 3; num++) {
+                if (line == 7 && num == 2){
+                    continue;
+                }
+
                 dominoesManager.dominoes[i].setLine(line);
                 dominoesManager.dominoes[i].setNum(num);
                 dominoesManager.dominoes[i].setRecumbent(true);
@@ -286,8 +296,8 @@ public class FragmentSpruce extends Fragment {
             d = dominoesManager.dominoes[i];
             imageViewDomino = viewFragment.findViewById(d.getIdView());
 
-            if(d.getLine() == 1 || d.getLine() == 11
-                    || d.getLine() == 6 || d.getLine() == 7){
+            if(d.getLine() == 1 || d.getLine() == 9
+                    || d.getLine() == 5){
                 d.setOpen(true);
             }else if(topDominoesIsRemoved(d.getLine(), d.getNum()) || bottomDominoesIsRemoved(d.getLine(), d.getNum())){
                 d.setOpen(true);
@@ -296,19 +306,20 @@ public class FragmentSpruce extends Fragment {
     }
 
     private boolean topDominoesIsRemoved(int line, int num){
-        Domino d, d1, d2;
+        Domino d;
         boolean isRemoved = true;
         int topLine = line-1;
 
         for (int i = 0; i < 2; i++) {
-            if (line == 3){
-                d1 = dominoesManager.findDomino(2, 1);
-                d2 = dominoesManager.findDomino(2, 2);
-                isRemoved = d1.isRemoved() & d2.isRemoved();
-            } else if(line == 7){
-                d1 = dominoesManager.findDomino(6, 2);
-                d2 = dominoesManager.findDomino(6, 3);
-                isRemoved = d1.isRemoved() & d2.isRemoved();
+            if (line < 5){
+                int topNum = num + i;
+                if (topNum == 0) {
+                    continue;
+                }
+                d = dominoesManager.findDomino(topLine, topNum);
+                if (d != null) {
+                    isRemoved = isRemoved & d.isRemoved();
+                }
             }
             else {
                 int topNum = num + i - 1;
@@ -329,16 +340,24 @@ public class FragmentSpruce extends Fragment {
         Domino d;
         boolean isRemoved = true;
 
-        if (line == 2){
-            d = dominoesManager.findDomino(3, 1);
-            isRemoved = d.isRemoved();
-        }
-        else if(line == 6){
-            if(num == 1 || num == 4) {
-                isRemoved = true;
-            } else {
-                d = dominoesManager.findDomino(7, 1);
-                isRemoved = d.isRemoved();
+//        if (line == 2){
+//            d = dominoesManager.findDomino(3, 1);
+//            isRemoved = d.isRemoved();
+//        }
+//        else if(line == 6){
+//            if(num == 1 || num == 4) {
+//                isRemoved = true;
+//            } else {
+//                d = dominoesManager.findDomino(7, 1);
+//                isRemoved = d.isRemoved();
+//            }
+//        }
+        if (line < 5){
+            for (int i = 1; i >= 0; i--) {
+                d = dominoesManager.findDomino(line + 1, num - i);
+                if (d != null) {
+                    isRemoved = isRemoved & d.isRemoved();
+                }
             }
         }
         else {
@@ -374,10 +393,10 @@ public class FragmentSpruce extends Fragment {
         pyramidLine.clearAnimation();
         pyramidLine = viewFragment.findViewById(R.id.s_line9);
         pyramidLine.clearAnimation();
-        pyramidLine = viewFragment.findViewById(R.id.s_line10);
-        pyramidLine.clearAnimation();
-        pyramidLine = viewFragment.findViewById(R.id.s_line11);
-        pyramidLine.clearAnimation();
+//        pyramidLine = viewFragment.findViewById(R.id.s_line10);
+//        pyramidLine.clearAnimation();
+//        pyramidLine = viewFragment.findViewById(R.id.s_line11);
+//        pyramidLine.clearAnimation();
     }
 
     @Override
